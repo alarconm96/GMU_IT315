@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A94C504127C5CB4E00DE153A /* HikingTrail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94C504027C5CB4E00DE153A /* HikingTrail.swift */; };
+		A9AE1A0227BC880200AA402F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AE1A0127BC880200AA402F /* AppDelegate.swift */; };
+		A9AE1A0427BC880200AA402F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AE1A0327BC880200AA402F /* SceneDelegate.swift */; };
+		A9AE1A0627BC880200AA402F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AE1A0527BC880200AA402F /* ViewController.swift */; };
+		A9AE1A0927BC880200AA402F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AE1A0727BC880200AA402F /* Main.storyboard */; };
+		A9AE1A0B27BC880300AA402F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9AE1A0A27BC880300AA402F /* Assets.xcassets */; };
+		A9AE1A0E27BC880300AA402F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9AE1A0C27BC880300AA402F /* LaunchScreen.storyboard */; };
+		A9B0BE2A27D8390300400A23 /* Sun-Mountain-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9B0BE2927D8390300400A23 /* Sun-Mountain-logo.jpg */; };
+		A9B0BE2C27D83B4600400A23 /* oldrag.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9B0BE2B27D83B4600400A23 /* oldrag.jpg */; };
+		A9B0BE3127D83C1200400A23 /* bearrun.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A9B0BE2D27D83C1100400A23 /* bearrun.jpeg */; };
+		A9B0BE3227D83C1200400A23 /* billygoat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9B0BE2E27D83C1100400A23 /* billygoat.jpg */; };
+		A9B0BE3327D83C1200400A23 /* bullrun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9B0BE2F27D83C1100400A23 /* bullrun.jpg */; };
+		A9B0BE3427D83C1200400A23 /* burkelake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9B0BE3027D83C1100400A23 /* burkelake.jpg */; };
+		A9B0BE3627D8493400400A23 /* cannon_fire.wav in Resources */ = {isa = PBXBuildFile; fileRef = A9B0BE3527D8493400400A23 /* cannon_fire.wav */; };
+		A9BFC72027F3D37D00A94961 /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BFC71F27F3D37D00A94961 /* RootTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A94C504027C5CB4E00DE153A /* HikingTrail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingTrail.swift; sourceTree = "<group>"; };
+		A9AE19FE27BC880200AA402F /* HikingTrail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HikingTrail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9AE1A0127BC880200AA402F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9AE1A0327BC880200AA402F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A9AE1A0527BC880200AA402F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9AE1A0827BC880200AA402F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9AE1A0A27BC880300AA402F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9AE1A0D27BC880300AA402F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9AE1A0F27BC880300AA402F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9B0BE2927D8390300400A23 /* Sun-Mountain-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Sun-Mountain-logo.jpg"; path = "background images/Sun-Mountain-logo.jpg"; sourceTree = SOURCE_ROOT; };
+		A9B0BE2B27D83B4600400A23 /* oldrag.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = oldrag.jpg; path = "background images/oldrag.jpg"; sourceTree = SOURCE_ROOT; };
+		A9B0BE2D27D83C1100400A23 /* bearrun.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bearrun.jpeg; path = "background images/bearrun.jpeg"; sourceTree = SOURCE_ROOT; };
+		A9B0BE2E27D83C1100400A23 /* billygoat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = billygoat.jpg; path = "background images/billygoat.jpg"; sourceTree = SOURCE_ROOT; };
+		A9B0BE2F27D83C1100400A23 /* bullrun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bullrun.jpg; path = "background images/bullrun.jpg"; sourceTree = SOURCE_ROOT; };
+		A9B0BE3027D83C1100400A23 /* burkelake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = burkelake.jpg; path = "background images/burkelake.jpg"; sourceTree = SOURCE_ROOT; };
+		A9B0BE3527D8493400400A23 /* cannon_fire.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = cannon_fire.wav; path = "Sample Sound Files for Hiking Trail app/cannon_fire.wav"; sourceTree = SOURCE_ROOT; };
+		A9BFC71F27F3D37D00A94961 /* RootTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9AE19FB27BC880200AA402F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9AE19F527BC880200AA402F = {
+			isa = PBXGroup;
+			children = (
+				A9AE1A0027BC880200AA402F /* HikingTrail */,
+				A9AE19FF27BC880200AA402F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9AE19FF27BC880200AA402F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9AE19FE27BC880200AA402F /* HikingTrail.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9AE1A0027BC880200AA402F /* HikingTrail */ = {
+			isa = PBXGroup;
+			children = (
+				A9B0BE3527D8493400400A23 /* cannon_fire.wav */,
+				A9B0BE2D27D83C1100400A23 /* bearrun.jpeg */,
+				A9B0BE2E27D83C1100400A23 /* billygoat.jpg */,
+				A9B0BE2F27D83C1100400A23 /* bullrun.jpg */,
+				A9B0BE3027D83C1100400A23 /* burkelake.jpg */,
+				A9B0BE2B27D83B4600400A23 /* oldrag.jpg */,
+				A9B0BE2927D8390300400A23 /* Sun-Mountain-logo.jpg */,
+				A9AE1A0127BC880200AA402F /* AppDelegate.swift */,
+				A9AE1A0327BC880200AA402F /* SceneDelegate.swift */,
+				A9AE1A0527BC880200AA402F /* ViewController.swift */,
+				A9AE1A0727BC880200AA402F /* Main.storyboard */,
+				A9AE1A0A27BC880300AA402F /* Assets.xcassets */,
+				A9AE1A0C27BC880300AA402F /* LaunchScreen.storyboard */,
+				A9AE1A0F27BC880300AA402F /* Info.plist */,
+				A94C504027C5CB4E00DE153A /* HikingTrail.swift */,
+				A9BFC71F27F3D37D00A94961 /* RootTableViewController.swift */,
+			);
+			path = HikingTrail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9AE19FD27BC880200AA402F /* HikingTrail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9AE1A1227BC880300AA402F /* Build configuration list for PBXNativeTarget "HikingTrail" */;
+			buildPhases = (
+				A9AE19FA27BC880200AA402F /* Sources */,
+				A9AE19FB27BC880200AA402F /* Frameworks */,
+				A9AE19FC27BC880200AA402F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HikingTrail;
+			productName = HikingTrail;
+			productReference = A9AE19FE27BC880200AA402F /* HikingTrail.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9AE19F627BC880200AA402F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A9AE19FD27BC880200AA402F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A9AE19F927BC880200AA402F /* Build configuration list for PBXProject "HikingTrail" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9AE19F527BC880200AA402F;
+			productRefGroup = A9AE19FF27BC880200AA402F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9AE19FD27BC880200AA402F /* HikingTrail */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9AE19FC27BC880200AA402F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B0BE2A27D8390300400A23 /* Sun-Mountain-logo.jpg in Resources */,
+				A9B0BE3227D83C1200400A23 /* billygoat.jpg in Resources */,
+				A9B0BE2C27D83B4600400A23 /* oldrag.jpg in Resources */,
+				A9B0BE3627D8493400400A23 /* cannon_fire.wav in Resources */,
+				A9B0BE3427D83C1200400A23 /* burkelake.jpg in Resources */,
+				A9AE1A0E27BC880300AA402F /* LaunchScreen.storyboard in Resources */,
+				A9B0BE3127D83C1200400A23 /* bearrun.jpeg in Resources */,
+				A9AE1A0B27BC880300AA402F /* Assets.xcassets in Resources */,
+				A9B0BE3327D83C1200400A23 /* bullrun.jpg in Resources */,
+				A9AE1A0927BC880200AA402F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9AE19FA27BC880200AA402F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9AE1A0627BC880200AA402F /* ViewController.swift in Sources */,
+				A9AE1A0227BC880200AA402F /* AppDelegate.swift in Sources */,
+				A9BFC72027F3D37D00A94961 /* RootTableViewController.swift in Sources */,
+				A94C504127C5CB4E00DE153A /* HikingTrail.swift in Sources */,
+				A9AE1A0427BC880200AA402F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A9AE1A0727BC880200AA402F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9AE1A0827BC880200AA402F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9AE1A0C27BC880300AA402F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9AE1A0D27BC880300AA402F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9AE1A1027BC880300AA402F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9AE1A1127BC880300AA402F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9AE1A1327BC880300AA402F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HikingTrail/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Marco-A.HikingTrail";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9AE1A1427BC880300AA402F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HikingTrail/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Marco-A.HikingTrail";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9AE19F927BC880200AA402F /* Build configuration list for PBXProject "HikingTrail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9AE1A1027BC880300AA402F /* Debug */,
+				A9AE1A1127BC880300AA402F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9AE1A1227BC880300AA402F /* Build configuration list for PBXNativeTarget "HikingTrail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9AE1A1327BC880300AA402F /* Debug */,
+				A9AE1A1427BC880300AA402F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9AE19F627BC880200AA402F /* Project object */;
+}
