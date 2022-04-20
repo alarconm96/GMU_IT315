@@ -55,6 +55,18 @@ class ViewController: UIViewController {
         setLabels()
     }
     
+    func convertToImage(urlString: String) -> UIImage {
+        //convert string to URL
+        let imgURL = URL(string: urlString)!
+        //call endpoint and receive the bytes
+        let imgDataBytes = try? Data(contentsOf: imgURL)
+        print(imgDataBytes ?? "Error image does not exist at URL \(imgURL)")
+        //convert bytes of data into image type
+        let img = UIImage(data: imgDataBytes!)
+        //return UIImage
+        return img!
+    }
+    
     //extracted method to set labels to default values
     fileprivate func setLabels() {
         
@@ -68,8 +80,7 @@ class ViewController: UIViewController {
         lblElevation.text = randomHT.trailElevation
         lblDifficulty.text = randomHT.trailDifficulty
         lblLength.text = randomHT.trailLength
-        imgTrail.image = UIImage(named: randomHT.trailImage)
-        
+        convertToImage(urlString: randomHT.trailImage)
         let setFav = UserDefaults.standard.string(forKey: "favorite")
         //isOn is boolean value
         //checks if trailname is in favorite
