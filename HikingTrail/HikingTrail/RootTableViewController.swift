@@ -13,6 +13,39 @@ import UIKit
 class RootTableViewController : UITableViewController {
     
     var HTArray = [HikingTrail]()
+    
+    func populateHTArrayFromJSON(){
+        let endPointString = "https://raw.githubusercontent.com/alarconm96/JSONProjectsIT315/master/HikingTrails.json"
+        let endPoint = URL(string: endPointString)
+        let responseBytes = try? Data(contentsOf: endPoint!)
+        print("repsonse bytes --- \(responseBytes)") // for debugging
+        if responseBytes != nil {
+            let dictionary:NSDictionary = (try! JSONSerialization.jsonObject(with: responseBytes!, options: JSONSerialization.ReadingOptions.mutableContainers)) as! NSDictionary
+            let htDictionary = dictionary["HikingTrails"]! as! [[String:AnyObject]]
+            
+            // retrieve JSON data
+            for index in 0...htDictionary.count - 1 {
+                // dictionary to single object (hiking trail)
+                let singleHT = htDictionary[index]
+                // create hikingtrail object
+                let ht = HikingTrail()
+                // retrieve each object from dictionary
+                ht.trailName = singleHT["TrailName"] as! String
+                ht.trailAddress = singleHT["TrailAddress"] as! String
+                ht.trailDescription = singleHT["TrailDescription"] as! String
+                ht.trailDifficulty = singleHT["TrailDifficulty"] as! String
+                ht.trailElevation = singleHT["TrailElevation"] as! String
+                ht.trailImage = singleHT["TrailImage"] as! String
+                ht.trailTime = singleHT["TrailTime"] as! String
+                ht.trailWebsite = singleHT["TrailWebsite"] as! String
+                ht.trailLength = singleHT["TrailLength"] as! String
+                HTArray.append(ht)
+            }
+        }
+    }
+    
+    
+    
     func populateHTArray(){
         let ht1 = HikingTrail()
         ht1.trailName = "Old Rag"
@@ -85,6 +118,7 @@ class RootTableViewController : UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        populateHTArrayFromJSON()
         populateHTArray()
     }
     
