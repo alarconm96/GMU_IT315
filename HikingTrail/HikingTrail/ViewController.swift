@@ -29,6 +29,15 @@ class ViewController: UIViewController {
     
     var mySound:AVPlayer!
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailSegue"{
+            //letting segue know what data type destination is
+            let destController = segue.destination as! DetailViewController
+            
+            destController.TrailObject = globalSelected
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setLabels()
@@ -55,17 +64,7 @@ class ViewController: UIViewController {
         setLabels()
     }
     
-    func convertToImage(urlString: String) -> UIImage {
-        //convert string to URL
-        let imgURL = URL(string: urlString)!
-        //call endpoint and receive the bytes
-        let imgDataBytes = try? Data(contentsOf: imgURL)
-        print(imgDataBytes ?? "Error image does not exist at URL \(imgURL)")
-        //convert bytes of data into image type
-        let img = UIImage(data: imgDataBytes!)
-        //return UIImage
-        return img!
-    }
+    
     
     //extracted method to set labels to default values
     fileprivate func setLabels() {
@@ -80,7 +79,7 @@ class ViewController: UIViewController {
         lblElevation.text = randomHT.trailElevation
         lblDifficulty.text = randomHT.trailDifficulty
         lblLength.text = randomHT.trailLength
-        convertToImage(urlString: randomHT.trailImage)
+        imgTrail.image = convertToImage(urlString: randomHT.trailImage)
         let setFav = UserDefaults.standard.string(forKey: "favorite")
         //isOn is boolean value
         //checks if trailname is in favorite
@@ -120,6 +119,18 @@ class ViewController: UIViewController {
         let trailWebsiteURL = globalSelected.trailWebsite
         let url = URL(string:trailWebsiteURL)
         browserApp.open(url!)
+    }
+    
+    func convertToImage(urlString: String) -> UIImage {
+        //convert string to URL
+        let imgURL = URL(string: urlString)!
+        //call endpoint and receive the bytes
+        let imgDataBytes = try? Data(contentsOf: imgURL)
+        print(imgDataBytes ?? "Error image does not exist at URL \(imgURL)")
+        //convert bytes of data into image type
+        let img = UIImage(data: imgDataBytes!)
+        //return UIImage
+        return img!
     }
     
 }
