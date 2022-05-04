@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     
+    @IBOutlet weak var lblHabitat: UILabel!
     @IBOutlet weak var lblWeight: UILabel!
     @IBOutlet weak var lblSize: UILabel!
     @IBOutlet weak var lblScientific: UILabel!
