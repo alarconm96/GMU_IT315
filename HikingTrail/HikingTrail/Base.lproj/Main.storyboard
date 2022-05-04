@@ -131,15 +131,6 @@
                                 <rect key="frame" x="7" y="80" width="375" height="235"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tb4-Rb-5sp">
-                                <rect key="frame" x="26" y="786" width="119" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next Trail"/>
-                                <connections>
-                                    <action selector="btnTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nv5-TU-SjK"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQE-ue-5Sf">
                                 <rect key="frame" x="16" y="637.39001606122429" width="72.000000000000028" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -202,7 +193,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Visit Site"/>
                                 <connections>
-                                    <action selector="btnVisitSite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gpT-Gb-cGO"/>
+                                    <segue destination="GT2-0k-irM" kind="showDetail" identifier="detailSegue" id="01V-uk-QZ1"/>
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="V3w-3A-hl3">
@@ -245,6 +236,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1320" y="-206"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="zLj-9j-cmn">
+            <objects>
+                <viewController id="GT2-0k-irM" customClass="DetailViewController" customModule="HikingTrail" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="US0-rX-RWN">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fd6-WB-DOs">
+                                <rect key="frame" x="12" y="84" width="362" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="76f-gP-7f6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdp-9H-Knu">
+                                <rect key="frame" x="12" y="129" width="362" height="681"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G8F-tM-UW0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fd6-WB-DOs" firstAttribute="leading" secondItem="G8F-tM-UW0" secondAttribute="leading" constant="12" id="2dM-J8-9wh"/>
+                            <constraint firstItem="Fd6-WB-DOs" firstAttribute="leading" secondItem="kdp-9H-Knu" secondAttribute="leading" id="7L7-Da-FyP"/>
+                            <constraint firstItem="Fd6-WB-DOs" firstAttribute="trailing" secondItem="US0-rX-RWN" secondAttribute="trailingMargin" id="ADO-iF-arz"/>
+                            <constraint firstItem="Fd6-WB-DOs" firstAttribute="top" secondItem="US0-rX-RWN" secondAttribute="topMargin" constant="-4" id="Q9P-Oz-bhs"/>
+                            <constraint firstItem="Fd6-WB-DOs" firstAttribute="trailing" secondItem="kdp-9H-Knu" secondAttribute="trailing" id="Xxo-UF-lwi"/>
+                            <constraint firstItem="kdp-9H-Knu" firstAttribute="bottom" secondItem="G8F-tM-UW0" secondAttribute="bottom" id="aMY-Oq-hzO"/>
+                            <constraint firstItem="kdp-9H-Knu" firstAttribute="top" secondItem="Fd6-WB-DOs" secondAttribute="bottom" constant="4" id="iEA-C7-eqX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblTrailName" destination="Fd6-WB-DOs" id="wMZ-BA-ZbX"/>
+                        <outlet property="wvTrailSite" destination="kdp-9H-Knu" id="cce-jA-SFr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqm-Yo-pad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2567.6923076923076" y="-206.1611374407583"/>
         </scene>
     </scenes>
     <resources>

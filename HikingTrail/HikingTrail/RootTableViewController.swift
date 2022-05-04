@@ -46,67 +46,7 @@ class RootTableViewController : UITableViewController {
     
     
     
-    func populateHTArray(){
-        let ht1 = HikingTrail()
-        ht1.trailName = "Old Rag"
-        ht1.trailDescription = "Old Rag Description"
-        ht1.trailLength = "9 miles"
-        ht1.trailTime = "9 hours"
-        ht1.trailDifficulty = "Difficult"
-        ht1.trailElevation = "2850 ft"
-        ht1.trailAddress = "Shenandoah"
-        ht1.trailWebsite = "https://www.alltrails.com/trail/us/virginia/old-rag-mountain-loop-trail"
-        ht1.trailImage = "oldrag.jpg"
-        HTArray.insert(ht1, at: 0)
-        
-        let ht2 = HikingTrail()
-        ht2.trailName = "Bear's Den"
-        ht2.trailDescription = "Bear's Den Description"
-        ht2.trailLength = "3 miles"
-        ht2.trailTime = "3 hours"
-        ht2.trailDifficulty = "Easy"
-        ht2.trailElevation = "1000 ft"
-        ht2.trailAddress = "Blumont"
-        ht2.trailWebsite = "https://www.alltrails.com/trail/us/virginia/bears-den-park-trail"
-        ht2.trailImage = "bearrun.jpeg"
-        HTArray.append(ht2)
-        
-        let ht3 = HikingTrail()
-        ht3.trailName = "Scotts Run"
-        ht3.trailDescription = "Scotts Run Description"
-        ht3.trailLength = "4 miles"
-        ht3.trailTime = "1 hours"
-        ht3.trailDifficulty = "Moderate"
-        ht3.trailElevation = "1200 ft"
-        ht3.trailAddress = "Great Falls"
-        ht3.trailWebsite = "https://www.alltrails.com/trail/us/virginia/scotts-run-river-trail"
-        ht3.trailImage = "billygoat.jpg"
-        HTArray.append(ht3)
-        
-        let ht4 = HikingTrail()
-        ht4.trailName = "White Oak"
-        ht4.trailDescription = "White Oak Description"
-        ht4.trailLength = "5 miles"
-        ht4.trailTime = "3 hours"
-        ht4.trailDifficulty = "Moderate"
-        ht4.trailElevation = "1200 ft"
-        ht4.trailAddress = "Shenandoah"
-        ht4.trailWebsite = "https://www.alltrails.com/trail/us/virginia/white-oak-trail"
-        ht4.trailImage = "burkelake.jpg"
-        HTArray.append(ht4)
-        
-        let ht5 = HikingTrail()
-        ht5.trailName = "Bull Run"
-        ht5.trailDescription = "Bull Run Description"
-        ht5.trailLength = "2 miles"
-        ht5.trailTime = "3 hours"
-        ht5.trailDifficulty = "Moderate"
-        ht5.trailElevation = "1200 ft"
-        ht5.trailAddress = "Manassas"
-        ht5.trailWebsite = "https://www.alltrails.com/trail/us/virginia/bull-run-trail"
-        ht5.trailImage = "bullrun.jpg"
-        HTArray.append(ht5)
-    }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //source controller has this function
@@ -119,7 +59,6 @@ class RootTableViewController : UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         populateHTArrayFromJSON()
-        populateHTArray()
     }
     
     // sets number of sections in view

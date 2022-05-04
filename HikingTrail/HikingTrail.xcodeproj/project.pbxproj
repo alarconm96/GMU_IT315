@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A94C504127C5CB4E00DE153A /* HikingTrail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94C504027C5CB4E00DE153A /* HikingTrail.swift */; };
+		A95CBEBE2818B7E4001F9B33 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95CBEBD2818B7E4001F9B33 /* DetailViewController.swift */; };
 		A9AE1A0227BC880200AA402F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AE1A0127BC880200AA402F /* AppDelegate.swift */; };
 		A9AE1A0427BC880200AA402F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AE1A0327BC880200AA402F /* SceneDelegate.swift */; };
 		A9AE1A0627BC880200AA402F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AE1A0527BC880200AA402F /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		A94C504027C5CB4E00DE153A /* HikingTrail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingTrail.swift; sourceTree = "<group>"; };
+		A95CBEBD2818B7E4001F9B33 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A9AE19FE27BC880200AA402F /* HikingTrail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HikingTrail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9AE1A0127BC880200AA402F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9AE1A0327BC880200AA402F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				A9AE1A0F27BC880300AA402F /* Info.plist */,
 				A94C504027C5CB4E00DE153A /* HikingTrail.swift */,
 				A9BFC71F27F3D37D00A94961 /* RootTableViewController.swift */,
+				A95CBEBD2818B7E4001F9B33 /* DetailViewController.swift */,
 			);
 			path = HikingTrail;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				A9BFC72027F3D37D00A94961 /* RootTableViewController.swift in Sources */,
 				A94C504127C5CB4E00DE153A /* HikingTrail.swift in Sources */,
 				A9AE1A0427BC880200AA402F /* SceneDelegate.swift in Sources */,
+				A95CBEBE2818B7E4001F9B33 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
