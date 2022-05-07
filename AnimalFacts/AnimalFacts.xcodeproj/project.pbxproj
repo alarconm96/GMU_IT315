@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A938D282282619DC00DCCF0B /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A938D281282619DC00DCCF0B /* RootTableViewController.swift */; };
 		A95972FC2822028500EDD216 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95972FB2822028500EDD216 /* AppDelegate.swift */; };
 		A95972FE2822028500EDD216 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95972FD2822028500EDD216 /* SceneDelegate.swift */; };
 		A95973002822028500EDD216 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95972FF2822028500EDD216 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A938D281282619DC00DCCF0B /* RootTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTableViewController.swift; sourceTree = "<group>"; };
 		A95972F82822028500EDD216 /* AnimalFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95972FB2822028500EDD216 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A95972FD2822028500EDD216 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				A95973042822028600EDD216 /* Assets.xcassets */,
 				A95973062822028600EDD216 /* LaunchScreen.storyboard */,
 				A95973092822028600EDD216 /* Info.plist */,
+				A938D281282619DC00DCCF0B /* RootTableViewController.swift */,
 			);
 			path = AnimalFacts;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				A95973002822028500EDD216 /* ViewController.swift in Sources */,
 				A95972FC2822028500EDD216 /* AppDelegate.swift in Sources */,
 				A95972FE2822028500EDD216 /* SceneDelegate.swift in Sources */,
+				A938D282282619DC00DCCF0B /* RootTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
