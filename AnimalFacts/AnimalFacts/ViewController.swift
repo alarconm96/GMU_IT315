@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgAnimal: UIImageView!
     @IBOutlet weak var lblAnimal: UILabel!
     
+    var globalAnimal = Animal()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
