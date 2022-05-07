@@ -43,8 +43,7 @@ class RootTableViewController : UITableViewController{
         let selectedAnimal = animalArray[indexPath.row]
         cell?.textLabel?.text = selectedAnimal.name
         cell?.detailTextLabel?.text = selectedAnimal.scientificName
-        let img = convertToImage(urlString: "https://raw.githubusercontent.com/alarconm96/JSONProjectsIT315/master/HikingLogo.png")
-        cell?.imageView?.image = img
+        cell?.imageView?.image = convertToImage(urlString: selectedAnimal.img)
         return cell!
     }
     
