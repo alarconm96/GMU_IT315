@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+//Associate class with UITableViewController by inheritance
 class RootTableViewController : UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()

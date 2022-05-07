@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblHabitat: UILabel!
     @IBOutlet weak var lblWeight: UILabel!
     @IBOutlet weak var lblSize: UILabel!
-    @IBOutlet weak var lblScientific: UILabel!
+    @IBOutlet weak var lblScientificName: UILabel!
     @IBOutlet weak var txtDesc: UITextView!
     @IBOutlet weak var imgAnimal: UIImageView!
     @IBOutlet weak var lblAnimal: UILabel!
