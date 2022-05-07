@@ -17,6 +17,14 @@ class RootTableViewController : UITableViewController{
         super.viewDidLoad()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //source controller has this function
+        //func passes selected object from the table view/array to the destination segue controller
+        let selectedRowObject = animalArray[tableView.indexPathForSelectedRow!.row]
+        let destController = segue.destination as! ViewController
+        destController.globalAnimal = selectedRowObject
+    }
+    
     //number of sectioned off cells for table view
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
