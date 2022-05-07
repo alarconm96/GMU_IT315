@@ -22,6 +22,11 @@ class RootTableViewController : UITableViewController{
         return 1
     }
     
+    // sets number of rows in each section to count of animalArray
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return animalArray.count
+    }
+    
     //populate Animal array from JSON data
     func populateFromJSON(){
         let endPointString = "https://raw.githubusercontent.com/alarconm96/JSONProjectsIT315/master/animals.json"
