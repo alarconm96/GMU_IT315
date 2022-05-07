@@ -15,6 +15,7 @@ class RootTableViewController : UITableViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        populateFromJSON()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
