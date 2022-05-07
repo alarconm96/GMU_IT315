@@ -10,10 +10,10 @@ import UIKit
 
 class Animal{
     var name = ""
+    var scientificName = ""
     var habitat = ""
     var weight = ""
     var size = ""
-    var scientificName = ""
     var desc = ""
     var img = ""
 }
