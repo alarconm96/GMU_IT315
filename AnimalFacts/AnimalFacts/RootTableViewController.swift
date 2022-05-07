@@ -39,6 +39,19 @@ class RootTableViewController : UITableViewController{
         return cell!
     }
     
+    //reach out to url and download image data
+    func convertToImage(urlString: String) -> UIImage {
+        //convert string to URL
+        let imgURL = URL(string: urlString)!
+        //call endpoint and receive the bytes
+        let imgDataBytes = try? Data(contentsOf: imgURL)
+        print(imgDataBytes ?? "Error image does not exist at URL \(imgURL)")
+        //convert bytes of data into image type
+        let img = UIImage(data: imgDataBytes!)
+        //return UIImage
+        return img!
+    }
+    
     //populate Animal array from JSON data
     func populateFromJSON(){
         let endPointString = "https://raw.githubusercontent.com/alarconm96/JSONProjectsIT315/master/animals.json"
