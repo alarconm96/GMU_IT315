@@ -27,6 +27,18 @@ class RootTableViewController : UITableViewController{
         return animalArray.count
     }
     
+    //labels elements in tableView cells for respective animals
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellName")
+        // sets cell to 0th element in animalArray
+        let selectedAnimal = animalArray[indexPath.row]
+        cell?.textLabel?.text = selectedAnimal.name
+        cell?.detailTextLabel?.text = selectedAnimal.scientificName
+        let img = convertToImage(urlString: "https://raw.githubusercontent.com/alarconm96/JSONProjectsIT315/master/HikingLogo.png")
+        cell?.imageView?.image = img
+        return cell!
+    }
+    
     //populate Animal array from JSON data
     func populateFromJSON(){
         let endPointString = "https://raw.githubusercontent.com/alarconm96/JSONProjectsIT315/master/animals.json"
