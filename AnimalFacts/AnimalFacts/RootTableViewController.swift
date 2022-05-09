@@ -80,8 +80,8 @@ class RootTableViewController : UITableViewController{
                 animal.name = tmpAnimal["name"] as! String
                 animal.scientificName = tmpAnimal["scientificName"] as! String
                 animal.habitat = tmpAnimal["habitat"] as! String
-                animal.lat = tmpAnimal["lat"] as! String
-                animal.long = tmpAnimal["long"] as! String
+                animal.lat = tmpAnimal["lat"] as! Double
+                animal.long = tmpAnimal["long"] as! Double
                 animal.weight = tmpAnimal["weight"] as! String
                 animal.size = tmpAnimal["size"] as! String
                 animal.desc = tmpAnimal["desc"] as! String
