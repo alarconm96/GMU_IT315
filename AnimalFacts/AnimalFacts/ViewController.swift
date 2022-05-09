@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MapKit
 
 class ViewController: UIViewController {
 
@@ -59,6 +60,26 @@ class ViewController: UIViewController {
         //return UIImage
         return img!
     }
-
+    
+    func openMap() {
+        let latitude: CLLocationDegrees = globalAnimal.lat
+        let longitude: CLLocationDegrees = globalAnimal.long
+            let regionDistance:CLLocationDistance = 10000000
+            let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
+        let regionSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
+            let options = [
+                MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center),
+                MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)
+            ]
+            let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
+            let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = globalAnimal.habitat
+            mapItem.openInMaps(launchOptions: options)
+        }
+    
+    @IBAction func btnTouch(_ sender: Any) {
+        openMap()
+    }
+    
 }
 
