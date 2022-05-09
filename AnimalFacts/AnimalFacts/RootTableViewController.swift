@@ -84,6 +84,7 @@ class RootTableViewController : UITableViewController{
                 animal.size = tmpAnimal["size"] as! String
                 animal.desc = tmpAnimal["desc"] as! String
                 animal.img = tmpAnimal["img"] as! String
+                animal.wiki = tmpAnimal["wiki"] as! String
                 animalArray.append(animal)
             }
         }
