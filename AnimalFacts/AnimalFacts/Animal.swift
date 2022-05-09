@@ -12,6 +12,8 @@ class Animal{
     var name = ""
     var scientificName = ""
     var habitat = ""
+    var lat = ""
+    var long = ""
     var weight = ""
     var size = ""
     var desc = ""
