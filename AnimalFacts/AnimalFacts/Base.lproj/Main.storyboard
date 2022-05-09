@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-1809" y="73"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Animal Selection-->
         <scene sceneID="eED-G2-NJD">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="CXZ-uv-bcr" customClass="RootTableViewController" customModule="AnimalFacts" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Animal Selection" clearsSelectionOnViewWillAppear="NO" id="CXZ-uv-bcr" customClass="RootTableViewController" customModule="AnimalFacts" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="dcy-LB-YyY">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,25 +36,25 @@
                                 <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="62"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Grd-KY-ESg" id="FTK-WV-8PT">
-                                    <rect key="frame" x="0.0" y="0.0" width="373.33333333333331" height="62"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="361.33333333333331" height="62"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4II-f4-XR1">
-                                            <rect key="frame" x="45.166666666666671" y="16" width="25" height="14.333333333333334"/>
+                                            <rect key="frame" x="57.166666666666671" y="16" width="25" height="14.333333333333334"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zce-SJ-jeV">
-                                            <rect key="frame" x="45.166666666666671" y="32.333333333333336" width="40.666666666666664" height="13.333333333333334"/>
+                                            <rect key="frame" x="57.166666666666671" y="32.333333333333336" width="40.666666666666664" height="13.333333333333334"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="photo.fill" catalog="system" id="8AY-am-LSn">
-                                            <rect key="frame" x="6.5000000000000018" y="22.333333333333336" width="23.666666666666668" height="17.333333333333332"/>
+                                            <rect key="frame" x="18.5" y="22.333333333333336" width="23.666666666666668" height="17.333333333333332"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
@@ -69,7 +69,7 @@
                             <outlet property="delegate" destination="CXZ-uv-bcr" id="LAP-1b-HGq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="4TF-3O-ecr"/>
+                    <navigationItem key="navigationItem" title="Animals" id="4TF-3O-ecr"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pp8-Nr-IW5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
