@@ -16,4 +16,5 @@ class Animal{
     var size = ""
     var desc = ""
     var img = ""
+    var wiki = ""
 }
