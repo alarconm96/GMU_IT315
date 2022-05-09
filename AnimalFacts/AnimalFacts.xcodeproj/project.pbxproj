@@ -15,6 +15,7 @@
 		A95973032822028500EDD216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95973012822028500EDD216 /* Main.storyboard */; };
 		A95973052822028600EDD216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95973042822028600EDD216 /* Assets.xcassets */; };
 		A95973082822028600EDD216 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95973062822028600EDD216 /* LaunchScreen.storyboard */; };
+		A9616BE02828B765002ECF15 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9616BDF2828B765002ECF15 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A95973042822028600EDD216 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A95973072822028600EDD216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A95973092822028600EDD216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9616BDF2828B765002ECF15 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				A95973092822028600EDD216 /* Info.plist */,
 				A938D281282619DC00DCCF0B /* RootTableViewController.swift */,
 				A938D28328261C0200DCCF0B /* Animal.swift */,
+				A9616BDF2828B765002ECF15 /* DetailViewController.swift */,
 			);
 			path = AnimalFacts;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				A95973002822028500EDD216 /* ViewController.swift in Sources */,
 				A95972FC2822028500EDD216 /* AppDelegate.swift in Sources */,
 				A95972FE2822028500EDD216 /* SceneDelegate.swift in Sources */,
+				A9616BE02828B765002ECF15 /* DetailViewController.swift in Sources */,
 				A938D282282619DC00DCCF0B /* RootTableViewController.swift in Sources */,
 				A938D28428261C0200DCCF0B /* Animal.swift in Sources */,
 			);
