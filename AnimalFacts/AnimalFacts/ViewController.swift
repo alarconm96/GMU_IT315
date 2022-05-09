@@ -24,6 +24,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setLabels()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailSegue"{
+            //letting segue know what data type destination is
+            let destController = segue.destination as! DetailViewController
+            
+            destController.animalObject = globalAnimal
+        }
+    }
 
     fileprivate func setLabels(){
         let a = globalAnimal
